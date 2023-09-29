@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-app-auth-anon-logins-example",
+  "description": "Typescript, Next.js (app router), Auth.js (next-auth) direct to GitHub App",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env PORT=3000 DEBUG=nextjs:* NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen-secret": "node -e \"console.log(crypto.randomBytes(32+6).toString('base64'))\""
+  },
+  "dependencies": {
+    "@types/node": "20.6.3",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.5.2",
+    "next": "13.5.2",
+    "postcss": "8.4.30",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "next-auth": "^4.23.1",
+    "cookie": "^0.5.0",
+    "unique-names-generator": "^4.7.1",
+    "debug": "^4.3.4",
+    "@types/debug": "^4.1.9"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "json-server": "^0.17.3",
+    "prettier": "^3.0.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "serve": "^14.2.1"
+  }
+}

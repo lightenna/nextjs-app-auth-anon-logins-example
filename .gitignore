@@ -1,0 +1,70 @@
+# Ignore idea config
+.idea
+
+# Github pages/MM
+docs/_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# Local .terraform directories
+**/.terraform/*
+**/.terraform.*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+nohup.out
+
+# .tfvars files
+*.tfvars
+
+# ignore distribution folders and zips
+**/dist.zip
+**/dist-prod
+**/dist-staging
+app/**/build
+**/reference/tiles
+
+# ignore temporary test data
+**/data/*.jpg
+**/data/*.csv
+
+# Node.js
+**/node_modules
+# don't include local-only env files
+.env
+.env*.local
+**/.env.development.local
+
+# Next.js and Vercel
+.vercel
+**/.pnp
+.pnp.js
+**/coverage
+**/.next/
+**/out/
+# production
+**/build
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ignore dynamically generated secrets files
+**/dynamic-secrets.*.yaml
+
+# ignore spurious logs
+app/debug.log
+**/newrelic_agent.log
+
+# ignore python libraries
+*_venv/
+*__pycache__*
+
+# misc
+.DS_Store
+*.pem
