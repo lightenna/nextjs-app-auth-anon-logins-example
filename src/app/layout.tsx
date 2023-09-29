@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'notegit',
-  description: 'Notes, stored in git',
+  title: 'Example',
+  description: 'Example of using next.js, nextauth.js and typescript for both anonymous sessions and authenticated sessions',
 }
 
 export default function RootLayout({
