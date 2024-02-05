@@ -24,7 +24,7 @@ export const authOptions: AuthOptions = {
     ],
     callbacks: {
         async jwt({token, account, profile}: {token: JWT, account: Account | null, profile?: Profile}): Promise<JWT> {
-            if (account && account?.expires_at && account?.type === 'oauth') {
+            if (account && account?.provider === 'github' && account?.type === 'oauth') {
                 // at sign-in, persist in the JWT the GitHub account details to enable brokered requests in the future
                 token.access_token = account.access_token;
                 token.expires_at = account.expires_at;
